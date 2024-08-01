@@ -33,12 +33,13 @@
         font-family: "Inter", sans-serif;
         color: #343a40;
         line-height: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
       .container {
         width: 900px;
-
         margin-top: 200px;
-        margin-left: 90px;
         font-size: 18px;
         display: flex;
         align-items: center;
@@ -64,10 +65,11 @@
       button:hover {
         background-color: #087f5b;
         /* In order to let the color change at the same time */
-        .icon {
-          color: white;
-        }
+
         cursor: pointer;
+      }
+      button:hover .icon:hover {
+        stroke: #fff;
       }
       a:nth-child(4) {
         padding: 15px 15px;
@@ -81,7 +83,8 @@
         justify-content: center;
       }
 
-      .link {
+      .link:link,
+      .link:visited {
         padding: 15px 15px;
         height: 30px;
         width: 30px;
@@ -91,7 +94,8 @@
         align-items: center;
         justify-content: center;
       }
-      .link:hover {
+      .link:hover,
+      .link:active {
         padding: 15px 15px;
         height: 30px;
         width: 30px;
